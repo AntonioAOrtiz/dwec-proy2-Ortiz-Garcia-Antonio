@@ -1,5 +1,4 @@
 import React from 'react';
 
 
-
-export default Portfolio;
+export default Academics;
