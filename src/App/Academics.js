@@ -8,7 +8,6 @@ function Academics(){
             <ul class="list-group p-4">
                 <li class="list-group-item">C.F.G.S. en Desarrollo de Aplicaciones Web</li>
                 <li class="list-group-item">C.F.G.S. en Vitivinicultura</li>
-                <li class="list-group-item">Third item</li>
             </ul>
             </div>
         </section>
