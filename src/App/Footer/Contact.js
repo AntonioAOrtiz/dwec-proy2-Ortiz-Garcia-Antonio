@@ -33,9 +33,9 @@ const Contact = () => {
                         {errors.email && errors.email.type === "pattern" && <span>Email no válido</span>}
                     </div>
                     <div className="mt-3 mb-3">
-                        <textarea id="mensaje" type="textarea" placeholder="Mensaje" className="form-control" rows="5" {...register("mensaje",{required: true,maxLength:255, pattern: mensajeRegex})}></textarea>
+                        <textarea id="mensaje" type="textarea" placeholder="Mensaje" className="form-control" rows="5" {...register("mensaje",{required: true,maxLength:255, pattern: mensajeRegex})} />
                         {errors.mensaje && errors.mensaje.type === "required" && <span>Campo obligatorio</span>}
-                        {errors.mensaje && errors.mensaje.type === "maxLenght" && <span>El mensaje debe tener como máximo 255 caracteres</span>}
+                        {errors.mensaje && errors.mensaje.type === "maxLength" && <span>El mensaje debe tener como máximo 255 caracteres</span>}
                         {errors.mensaje && errors.mensaje.type === "pattern" && <span>Mensaje no válido</span>}
                     </div>
                     <button type="submit" className="btn btn-primary">Enviar</button>
