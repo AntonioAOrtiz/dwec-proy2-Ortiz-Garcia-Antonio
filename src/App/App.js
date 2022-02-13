@@ -3,7 +3,7 @@ import Header from './Header';
 import Utility from './Utility/Utility';
 import About from './About';
 import Portfolio from './Portfolio';
-import Footer from './Footer';
+import Footer from './Footer/Footer';
 import Academics from './Academics';
 import './App.css';
 

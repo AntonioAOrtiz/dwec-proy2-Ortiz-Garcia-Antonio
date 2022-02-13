@@ -1,7 +1,7 @@
 import React from 'react';
 
-function About(){
-    return(
+function About() {
+    return (
         <section id="about">
             <div className="container-fluid p-5 my-5 bg-primary text-center text-white">
                 <h1 className="display-4">Hola, soy Antonio Ortiz, Desarrollador Web</h1>
