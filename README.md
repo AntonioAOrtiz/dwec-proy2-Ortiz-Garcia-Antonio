@@ -7,3 +7,6 @@ comandos para las librerías instaladas:
 npm install react-hook-form
 npm i node-sass
 npm i bootstrap@5.0.0-alpha3
+npm i bootstrap-icons
+
+Después de hacer npm start en la status bar (la barrita azul de abajo de vsc va a aparecer Watch Sass, al pulsarlo se van a crear los ficheros necesarios automáticamente.)
