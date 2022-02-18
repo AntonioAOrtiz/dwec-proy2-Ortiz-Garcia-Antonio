@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React, { useState } from 'react';
 import { useForm } from "react-hook-form";
 
 
@@ -10,7 +10,7 @@ const Contact = () => {
     const onSubmit = (data, e) => {
         e.preventDefault();
         console.log(data);
-        setMessage(`Gracias ${data.nombre}, por tu mensaje.`);
+        setMessage(`Gracias por tu mensaje, ${data.nombre}.`);
         reset();
       };
     
@@ -36,7 +36,7 @@ const Contact = () => {
                         {errors.apellido && errors.apellido.type === "pattern" && <span>El apellido no es válido</span>}
                     </div>
                     <div className="mt-3 mb-3">
-                        <input id="email" type="email" placeholder="Email" className="form-control" {...register("email",{required:true,pattern: emailRegex})} />
+                        <input id="email" type="text" placeholder="Email" className="form-control" {...register("email",{required:true,pattern: emailRegex})} />
                         {errors.email && errors.email.type === "required" && <span>Campo obligatorio</span>}
                         {errors.email && errors.email.type === "pattern" && <span>Email no válido</span>}
                     </div>

@@ -5,7 +5,6 @@ import About from './About';
 import Portfolio from './Portfolio';
 import Footer from './Footer/Footer';
 import Academics from './Academics';
-import './App.css';
 
 
 
