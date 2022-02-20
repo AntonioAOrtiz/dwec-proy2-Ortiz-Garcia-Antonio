@@ -7,7 +7,10 @@ const VisibilityControl = props => {
             <input 
             type="checkbox"
             className="form-check-input"
+            placeholder="Nueva Tarea"
+            //Propiedad de si está hecha o no, por defecto es true.
             checked={props.isChecked}
+            // Evento 
             onChange={e => props.callback(e.target.checked)}  
         />
         <label htmlFor="form-check-label">
