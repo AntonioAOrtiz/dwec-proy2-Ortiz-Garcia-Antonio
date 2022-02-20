@@ -21,7 +21,7 @@ function Utility() {
     //Ejecutamos esta función con useEffect cuando hay cambio de datos para guardarlos en el localStorage y recuperarlos.
     useEffect(() => {
         // Si existen datos, se toman esos datos y se agregan a la aplicación.
-        let data = localStorage.getItem("task");
+        let data = localStorage.getItem("tasks");
         if (data != null) {
             setTaskItems(JSON.parse(data))
         // Si no existen datos se añaden datos de ejemplo.
