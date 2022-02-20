@@ -7,7 +7,7 @@ import VisibilityControl from './VisibilityControl';
 //Componente con un CRUD de lista de tareas.
 function Utility() {
     //Estado con el se cambia el nombre de usuario.
-    const [userName, setUsername] = useState("Antonio");
+    const [userName, setUsername] = useState("Cristina");
     //Estado con el que se modifica el los items de la lista de tareas.
     const [taskItems, setTaskItems] = useState([
         { name: "Tarea Uno", done: false },
@@ -80,7 +80,7 @@ function Utility() {
                     {TaskTableRows(false)} 
                 </tbody>
             </table>
-            <div className="bg-secondary text-white text-center p-2">
+            <div className="bg-secondary text-white p-2">
                 <VisibilityControl 
                     description="Tareas Finalizadas"
                     isChecked={showCompleted}

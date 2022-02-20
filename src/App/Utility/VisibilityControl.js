@@ -4,7 +4,8 @@ import React from "react";
 const VisibilityControl = props => {
     return(
         <div className="form-check">
-            <input 
+            <input
+            id="flexCheckChecked" 
             type="checkbox"
             className="form-check-input"
             placeholder="Nueva Tarea"
@@ -13,9 +14,9 @@ const VisibilityControl = props => {
             // Evento 
             onChange={e => props.callback(e.target.checked)}  
         />
-        <label htmlFor="form-check-label">
+            <label htmlFor="form-check-label" for="flexCheckChecked" className="text-left">
             Muestra las {props.description}
-        </label>
+            </label>
         </div>
     )
 }
