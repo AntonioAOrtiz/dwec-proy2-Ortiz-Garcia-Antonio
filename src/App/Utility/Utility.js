@@ -4,15 +4,16 @@ import TaskBanner from './TaskBanner';
 import TaskCreator from './TaskCreator';
 import VisibilityControl from './VisibilityControl';
 
+//Componente con un CRUD de lista de tareas.
 function Utility() {
     //Estado con el se cambia el nombre de usuario.
     const [userName, setUsername] = useState("Antonio");
     //Estado con el que se modifica el los items de la lista de tareas.
     const [taskItems, setTaskItems] = useState([
-        { name: "Ver el portfolio completo", done: false },
-        { name: "Probar la lista de tareas", done: false },
-        { name: "Abrir la aplicación de portfolio", done: true },
-        { name: "Contactar con Antonio Ortiz", done: false }
+        { name: "Tarea Uno", done: false },
+        { name: "Tarea Dos", done: false },
+        { name: "Tarea Tres", done: true },
+        { name: "Tarea Cuatro", done: false }
     ]);
     // Estado con el que se modifica el valor true o false de done de las tareas.
     const [showCompleted, setShowCompleted] = useState(true)
@@ -27,10 +28,10 @@ function Utility() {
         }else {
             setUsername("Usuario");
             setTaskItems([
-                { name: "Tarea Uno", done: false },
-                { name: "Tarea Dos", done: false },
-                { name: "Tarea Tres", done: true },
-                { name: "Tarea Cuatro", done: false }
+                { name: "Ver el portfolio completo", done: false },
+                { name: "Probar la lista de tareas", done: false },
+                { name: "Abrir la aplicación de portfolio", done: true },
+                { name: "Contactar con Antonio Ortiz", done: false }
             ])
             setShowCompleted(true);
         }
@@ -64,7 +65,7 @@ function Utility() {
     
 
     return (
-        <section id="utility">
+        <section id="utility" className=" border border-2 border-dark p-5 m-5">
             <TaskBanner userName={userName} taskItems={taskItems} />
 
             <TaskCreator callback={createNewTask} />

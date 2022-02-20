@@ -16,14 +16,14 @@ const TaskCreator = props => {
     }
 
     return(
-        <div className="my-1">
+        <div className="my-3">
             <input 
             type="text"
             className="form-control"
             value={newTaskName}
             onChange={updateNewTaskValue}
             />
-            <button className="btn btn-primary mt-1" onClick={createNewTask}>
+            <button className="btn btn-primary mt-3" onClick={createNewTask}>
                 Nueva Tarea
             </button>
         </div>
