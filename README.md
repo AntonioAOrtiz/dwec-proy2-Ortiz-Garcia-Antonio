@@ -1,5 +1,6 @@
 Enlace al repositorio github del proyecto : https://github.com/AntonioAOrtiz/dwec-proy2-ortiz-garcia-antonio
 
+El portfolio como utilidad, tiene una lista de tareas en la que puedes crear tareas nuevas y marcar las que tienes hechas y que estas tareas pasen a otra tabla de tareas hechas. Además utilizo useffect para guardar los datos de la lista de tareas en el localstorage.
 He realizado un formulario de contacto, utilizando la libreria react hook form para el envío y validación del mismo. 
 Para los estilos he utilizadola librería bootstrap 5 y sass para personalizar los estilos de bootstrap. También he utilizado la libreria bootstrap icon para los iconos.
 
