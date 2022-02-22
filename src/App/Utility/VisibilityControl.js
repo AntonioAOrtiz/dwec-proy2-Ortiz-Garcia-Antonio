@@ -8,7 +8,6 @@ const VisibilityControl = props => {
             id="flexCheckChecked" 
             type="checkbox"
             className="form-check-input"
-            placeholder="Nueva Tarea"
             //Propiedad de si está hecha o no, por defecto es true.
             checked={props.isChecked}
             // Evento 

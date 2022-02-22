@@ -67,7 +67,8 @@ function Utility() {
     return (
         <section id="utility" className=" border border-2 border-dark p-5 m-5">
             <TaskBanner userName={userName} taskItems={taskItems} />
-
+            <input className="form-control" type="text" placeholder="Introduce tu nombre" 
+            onChange={e => setUsername(e.target.value)} />
             <TaskCreator callback={createNewTask} />
             <table className="table table-striped table-bordered">
                 <thead>

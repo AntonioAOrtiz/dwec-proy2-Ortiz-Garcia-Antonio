@@ -20,6 +20,7 @@ const TaskCreator = props => {
             <input 
             type="text"
             className="form-control"
+            placeholder="Nueva Tarea"
             value={newTaskName}
             onChange={updateNewTaskValue}
             />
