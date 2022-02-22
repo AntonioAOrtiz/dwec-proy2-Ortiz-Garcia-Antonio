@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/dwec-proy2-ortiz-garcia-antonio/static/css/main.3565aaab.css",
-    "main.js": "/dwec-proy2-ortiz-garcia-antonio/static/js/main.6fed7435.js",
+    "main.js": "/dwec-proy2-ortiz-garcia-antonio/static/js/main.ee6f7ea0.js",
     "index.html": "/dwec-proy2-ortiz-garcia-antonio/index.html",
     "main.3565aaab.css.map": "/dwec-proy2-ortiz-garcia-antonio/static/css/main.3565aaab.css.map",
-    "main.6fed7435.js.map": "/dwec-proy2-ortiz-garcia-antonio/static/js/main.6fed7435.js.map"
+    "main.ee6f7ea0.js.map": "/dwec-proy2-ortiz-garcia-antonio/static/js/main.ee6f7ea0.js.map"
   },
   "entrypoints": [
     "static/css/main.3565aaab.css",
-    "static/js/main.6fed7435.js"
+    "static/js/main.ee6f7ea0.js"
   ]
 }
