@@ -76,10 +76,10 @@ function Utility() {
     return (
         <section id="utility" className=" border border-2 border-dark p-5 m-5">
             <TaskBanner userName={userName} taskItems={taskItems} />
-            */Input para escribir el nombre de usuario, va cambiando conforme el usuario va escribiendo. */
+            {/*Input para escribir el nombre de usuario, va cambiando conforme el usuario va escribiendo. */}
             <input className="form-control" type="text" placeholder="Introduce tu nombre" 
             onChange={e => setUsername(e.target.value)} />
-            /*Creador de tareas nuevas*/
+            {/*Creador de tareas nuevas*/}
             <TaskCreator callback={createNewTask} />
             <table className="table table-striped table-bordered">
                 <thead>
@@ -89,19 +89,19 @@ function Utility() {
                     </tr>
                 </thead>
                 <tbody>
-                    /*Muestra las tareas en una tabla si no se han realizado.
+                    {/*Muestra las tareas en una tabla si no se han realizado.*/}
                     {TaskTableRows(false)} 
                 </tbody>
             </table>
             <div className="bg-secondary text-white p-2">
-            /*Componente que muestra en un tabla las tareas que ya fueron hechas.*/
+            {/*Componente que muestra en un tabla las tareas que ya fueron hechas.*/}
                 <VisibilityControl 
                     description="Tareas Finalizadas"
                     isChecked={showCompleted}
                     callback={checked => setShowCompleted(checked)}
                 />
             </div>
-            /* Si las tareas fueron hechas, se pintan en una tabla.
+            {/* Si las tareas fueron hechas, se pintan en una tabla.*/}
             {
                 showCompleted && (
                     <table className="table table-striped table-bordered">
