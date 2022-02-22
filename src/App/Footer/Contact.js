@@ -26,7 +26,7 @@ const Contact = () => {
                 <h3>Contacto</h3>
                 <form className="grid" id="contact" onSubmit={handleSubmit(onSubmit)}>{/*Al submiter el formulario ejecuta el manejador con la función onsubmit */}
                     <div className="mt-3 mb-3">{/*Si no se cumplen los requisitos de validación se muestra un mensaje con el error correspondiente*/}
-                        <input id="nombre" type="text" placeholder="Nombre" className="form-control"  {...register("nombre",{required: true, minLength:2, pattern:nombreRegex})} />/*Campo requerido, mínimo 2 caracteres y que cumpla la validación regex */
+                        <input id="nombre" type="text" placeholder="Nombre" className="form-control"  {...register("nombre",{required: true, minLength:2, pattern:nombreRegex})} />{/*Campo requerido, mínimo 2 caracteres y que cumpla la validación regex */}
                         {errors.nombre && errors.nombre.type === "required" && <span>Campo obligatorio</span>}
                         {errors.nombre && errors.nombre.type === "pattern" && <span>El nombre no es válido </span>}
                         {errors.nombre && errors.nombre.type === "minLength" && <span>El nombre debe tener como mínimo dos caracteres </span>}

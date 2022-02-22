@@ -1,4 +1,6 @@
+Enlace al proyecto desplegado: https://antonioaortiz.github.io/dwec-proy2-ortiz-garcia-antonio/
 Enlace al repositorio github del proyecto : https://github.com/AntonioAOrtiz/dwec-proy2-ortiz-garcia-antonio
+
 
 El portfolio como utilidad, tiene una lista de tareas en la que puedes crear tareas nuevas y marcar las que tienes hechas y que estas tareas pasen a otra tabla de tareas hechas. Además utilizo useffect para guardar los datos de la lista de tareas en el localstorage.
 He realizado un formulario de contacto, utilizando la libreria react hook form para el envío y validación del mismo. 
