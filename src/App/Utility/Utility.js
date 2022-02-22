@@ -22,8 +22,10 @@ function Utility() {
     useEffect(() => {
         // Si existen datos, se toman esos datos y se agregan a la aplicación.
         let data = localStorage.getItem("tasks");
+        let userName = localStorage.getItem("username");
         if (data != null) {
             setTaskItems(JSON.parse(data))
+            setUsername(JSON.parse(userName))
         // Si no existen datos se añaden datos de ejemplo.
         }else {
             setUsername("Usuario");
@@ -37,10 +39,17 @@ function Utility() {
         }
     },[]);
 
-    // Guardamos los datos en el localStorage cada vez que cambie la lista de tareas.
+    // Guardo los datos en el localStorage cada vez que cambie la lista de tareas.
     useEffect(() => {
         localStorage.setItem("tasks", JSON.stringify(taskItems));
     },[taskItems]);
+
+    // Guardo el nombre introducido en el localstorage cada vez que cambie.
+    useEffect(() => {
+        localStorage.setItem("username", JSON.stringify(userName));
+    },[userName]);
+
+    
 
     // Función que recibe el nombre de una tarea nueva y la agrega a la lista de tareas si no fue ya agregada.
     const createNewTask = taskName => {
