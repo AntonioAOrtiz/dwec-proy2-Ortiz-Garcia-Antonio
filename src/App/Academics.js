@@ -1,5 +1,5 @@
 import React from 'react';
-
+//Componente que va a mostrar los estudios realizados.
 function Academics() {
     return (
         <section id="academics">

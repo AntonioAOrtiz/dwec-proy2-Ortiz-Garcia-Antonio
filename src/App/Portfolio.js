@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Componente que va a ser el donde se muestre los enlaces a los proyectos.
 function Portfolio() {
     return (
         <section id="portfolio">

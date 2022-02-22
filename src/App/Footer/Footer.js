@@ -1,6 +1,7 @@
 import React from 'react';
 import Contact from './Contact';
 
+//Componente que va a ser el formulario de contacto y el footer.
 function Footer() {
     return (
         <div id="footer">

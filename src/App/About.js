@@ -1,5 +1,6 @@
 import React from 'react';
 
+//Componente que muestra una presentación.
 function About() {
     return (
         <section id="about">
