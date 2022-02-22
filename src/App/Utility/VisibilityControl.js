@@ -9,7 +9,7 @@ const VisibilityControl = props => {
             className="form-check-input"
             //Propiedad de si está hecha o no, por defecto es true.
             checked={props.isChecked}
-            // Evento 
+            // onChange se ejecuta un evento que captura si se pincha en la tarea hecha.
             onChange={e => props.callback(e.target.checked)}  
         />
             <label htmlFor="form-check-label" className="text-left">
